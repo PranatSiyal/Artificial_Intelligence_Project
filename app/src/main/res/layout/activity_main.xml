@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/snowwhite"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@android:color/system_accent3_100"
+        android:elevation="4dp"
+        app:title="Artificial Intelligence project"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="453dp"
+        android:layout_above="@id/bottom_layout"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="434dp"
+        android:layout_marginBottom="-727dp"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="474dp">
+
+        <Button
+            android:id="@+id/snow_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginBottom="149dp"
+            android:text="snowwhite"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/Dwarfs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginBottom="149dp"
+            android:text="Dwarfs"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/send_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="56dp"
+            android:src="@drawable/edit_text_bg"
+            android:text="RUN"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/message_text_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Add Keywords Here"
+            android:padding="10dp"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/Witch"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-185dp"
+            android:layout_marginTop="63dp"
+            android:layout_marginEnd="93dp"
+            android:layout_marginBottom="147dp"
+            android:text="Witch" />
+
+        <Button
+            android:id="@+id/Prince"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="66dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="147dp"
+            android:text="Prince" />
+
+        <Button
+            android:id="@+id/Jealousy"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="161dp"
+            android:layout_marginBottom="59dp"
+            android:text="Jealousy"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/Love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="157dp"
+            android:layout_marginEnd="138dp"
+            android:layout_marginBottom="59dp"
+            android:layout_toStartOf="@+id/send_btn"
+            android:layout_toEndOf="@+id/Jealousy"
+            android:text="Love" />
+
+        <Button
+            android:id="@+id/Beauty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-167dp"
+            android:layout_marginTop="154dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="59dp"
+            android:text="Beauty"
+            android:textSize="10dp" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
